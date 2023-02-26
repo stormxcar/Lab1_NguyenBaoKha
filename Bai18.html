@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style>
+        body{
+            box-sizing: border-box;
+        }
+        .card{
+            margin-left: auto;
+            margin-right: auto;
+            width: 300px;
+            height: 100%;
+            box-shadow: 0 2px 20px #555;
+            padding : 5px;
+        }
+    </style>
+<body>
+    <form action="" method ="get" name ="frmInfo" class="card">
+        Please indicate your area of interest:<br>
+        <input type="text" name = "txtName" value ="" size ="20" maxlength =20 list="tech">
+        <datalist id="tech">
+            <option value="CSS"></option>
+            <option value="HTML"></option>
+            <option value="JavaScript"></option>
+            <option value="React"></option>
+        </datalist>
+    </form>
+</body>
+</html>

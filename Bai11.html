@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style>
+        *{
+            /* margin: 0;
+            padding: 0; */
+            box-sizing: border-box;
+        }
+        .card{
+            margin: 50%;
+            transform: translate(-50% , -50%);
+            width: 500px;
+            height: 100%;
+            border : none;
+            box-shadow: 0 2px 10px black;
+            padding : 10px;
+            border-radius: 5px;
+        }
+        .logo_mozilla{
+            display: block;
+        }
+        .card_content{
+            margin-bottom: 50px;
+        }
+        img{
+            width: 400px;
+        }
+        a:hover{
+            color : blue
+        }
+        .card_social {
+            padding :0 10px;
+        }
+        .card_social a:first-child{
+            padding : 0 5px;
+            border-right: 1px solid #555;
+        }
+        .card_social a:last-child{
+            padding : 0 5px;
+            border-left: 1px solid #555;
+        }
+    </style>
+<body>
+    <div class="card">
+        <div class="logo_mozilla">
+            <img src="drumbeat.png" alt="">
+        </div>
+        <div class="card_content">
+            <h2>About</h2>
+            <p>Drumbeat is an initiative that wants to keep the web open and do it through <i>practical projects and local events </i>that gather smart, create people around big ideas , solving problems and building the <b>open web</b></p>
+            <h2>Projects</h2>
+            <ul>
+                <li><b>Featured</b></li>
+                <ul>
+                    <li><a href="">School of Webcraft</a></li>
+                    <li><a href="">Crisis Commons</a></li>
+                </ul>
+                <li><b>Latest</b></li>
+                <ul>
+                    <li><a href="">JessyLink</a></li>
+                    <li><a href="">PrivacyCamp</a></li>
+                </ul>
+            </ul>
+        </div>
+        <div class="card_social">
+            <a href="">Twitter</a>
+            <a href="">Facebook</a>
+            <a href="">Flickr</a>
+        </div>
+    </div>
+</body>
+</html>

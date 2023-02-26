@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style>
+        body{
+            box-sizing: border-box;
+        }
+        .card_contact{
+            margin-left: auto;
+            margin-right: auto;
+            width: 500px;
+            height: 100%;
+            box-shadow: 0 2px 10px #555;
+            border-radius: 3px;
+            padding : 5px;
+            background-color: rgb(227, 200, 151);
+        }
+        input,textarea{
+            outline : none;
+        }
+        h1{
+            text-align: center;
+        }
+        .card_ques {
+            position : relative;
+            justify-items: center;
+        }
+        .card_ques .card_ques_how{
+            display : flex;
+            gap : 20px
+        }
+        .card_selections{
+            width: 150px;
+            outline : none;
+            border-radius: 3px;
+            padding : 3px;
+        }
+        .card_chk{
+            display : flex;
+            align-items: center;
+            /* text-align: center; */
+            /* justify-content: center; */
+        }
+        input[type="checkbox"]{
+            display : flex;
+            width: 20px;
+            height: 20px;
+            margin-left: 40px;
+        }
+        .card_chk p{
+        }
+        button[type="submit"]{
+            display : flex;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            transition: 0.25s;
+            padding: 4px;
+            border-radius: 3px;
+            border: none;
+            margin-top: 10px;
+            margin-left: 200px;
+        }
+        button[type="submit"]:hover{
+            background-color: green;
+            color : #fff;
+        }
+    </style>
+<body>
+    <div class="card_contact">
+        <h1>Contact Us</h1>
+        <fieldset>
+            <legend><b>Your Message : </b></legend>
+            <table>
+                <tr>
+                    <td><label for = "emailTo">To</label></td>
+                    <td><input type="text" name ="txtTo" readonly = "readonly" value ="Example Cafe" id ="emailTo" size = "20"></td>
+                </tr>
+                <tr>
+                    <td><label for = "emailFrom">Your email</label></td>
+                    <td><input type="text" name ="txtFrom" value ="" id ="emailFrom" size = "20" tabindex="1" maxlength="250"></td>
+                </tr>
+                <tr>
+                    <td><label for = "emailBody">Message</label></td>
+                    <td><textarea name ="txtBody" id = "emailBody" cols ="50" rows ="10" tabindex="2"></textarea></td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend><b>How you found us : </b></legend>
+            <div class="card_ques">
+                <div class="card_ques_how">
+                    <span>How did you hear of us ? </span>
+                    <select class = "card_selections">
+                        <option value="item1">Google</option>
+                        <option value="item2" selected>Facebook</option>
+                        <option value="item3">Twitter</option>
+                        <option value="item3">Zalo</option>
+                    </select>
+                </div>
+                <div class="card_chk">
+                    <span>Newsletter</span>
+                    <input type="checkbox">
+                    <p>Ensure this box is checked if you would like to receive email updates</p>
+                </div>
+            </div>
+        </fieldset>
+        <button type = "submit">Send message</button>
+    </div>
+</body>
+</html>

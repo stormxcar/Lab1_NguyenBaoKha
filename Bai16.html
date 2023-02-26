@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .card_travel{
+            margin-left: auto;
+            margin-right: auto;
+            width: 400px;
+            height: 100%;
+            box-shadow: 0 2px 10px #555;
+            padding: 3px;
+            border-radius: 3px;
+        }
+        .card_travel .card_travel_title{
+            font-size: 2.3em;
+            font-weight: 600;
+        }
+        select{
+            width: 100px;
+            background-color:azure;
+        }
+        input{
+            border: inset;
+        }
+    </style>
+<body>
+    <div class="card_travel">
+        <div class="card_travel_title">Travel reservation form</div>
+        <h2>*denotes mandotory</h2>
+
+        <form action="" >
+            <p><b>Full name*:</b></p>
+            <input type="text" name ="txtName" value ="" id ="" size = "26" tabindex="1" maxlength="250" placeholder="FirstName LastName">
+
+            <p><b>Email address*:</b></p>
+            <input type="email" name ="txtEmail" value ="" id ="emailTo" size = "26" tabindex="1" maxlength="250" placeholder="EMAIL_ADDRESS">
+
+            <p><b>Select Tour Pacjkage*:</b></p>
+            <select name="" id="">
+                <option value="item1">Goa</option>
+                <option value="item2">Goject</option>
+                <option value="item3">Grap</option>
+            </select>
+
+            <p><b>Arrival Date*:</b></p>
+            <input type="date" name = "txtDate" placeholder ="Thanh Van" value = "" size = "26" maxlength = "100" >
+
+            <p><b>Number of persons*:</b></p>
+            <input type="number" name ="txtNumber" id ="" size = "26" tabindex="1" maxlength="250" placeholder="UNKNOWN_TYPE">
+
+            <p><b>What would you want to avil?*</b></p>
+            <span>Boarding</span>
+            <input type="checkbox"><br>
+            <span>Fooding</span>
+            <input type="checkbox"><br>
+            <span>Sight seeing</span>
+            <input type="checkbox"><br>
+
+            <p><b>Discount Coupon Code:</b></p>
+            <input type="text" name ="" id ="" size = "26" tabindex="1" maxlength="250" placeholder="UNKNOWN_TYPE">
+
+            <p><b>Terms and conditions*</b></p>
+            <label>
+                <input type="radio" name ="txtRad" checked ="checked" id ="" value ="">
+                I agree
+            </label>
+            <label>
+                <input type="radio" name="txtRad" value="">
+                I disagree
+            </label>
+            <br>
+            <button type="submit" >Complete reservation</button>
+        </form>
+    </div>
+</body>
+</html>

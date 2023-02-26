@@ -7,23 +7,28 @@
     <title>Document</title>
 </head>
 <body>
-    <table cellspacing="0" cellpadding="20" border="1">
+    <table cellspacing="2" cellpadding="20" border="1" align = "center">
         <tr>
+            <!-- 5 cột -->
             <td>1</td>
-            <td colspan="4" rowspan="1">2</td>
+            <td colspan="4" rowspan="1" align="center">2</td>
         </tr>
         <tr>
-            <td colspan="1" rowspan="3">3</td>
-            <td colspan="4" rowspan="4">
-                4
-            </td>
-            <td colspan="" rowspan="1">5</td>
-                <td>6</td>
-                <td>7</td>
-                <td>8</td>
-                <td>9</td>
-                <td>10</td>
-        
+            <!-- 5 col -->
+            <td rowspan="3">3</td>
+            <td style = "background-color: orange;">4</td>
+            <td style = "background-color: orange;">5</td>
+            <td rowspan="2" colspan="2" style = "background-color: yellow;">6</td>  
+        </tr>
+        <tr>
+            <!-- 5 col -->
+            <td style = "background-color: orange;"">7</td>
+            <td style = "background-color: orange;">8</td>
+        </tr>
+        <tr>
+            <!-- 4 col -->
+            <td rowspan="1" colspan="2" align="center" style = "background-color: yellow;">9</td>
+            <td colspan="2" rowspan="1" style = "background-color: yellow;">10</td>
         </tr>
     </table>
 </body>
