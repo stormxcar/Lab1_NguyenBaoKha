@@ -68,21 +68,56 @@ body{
 .web_content_HTML{
     display : flex;
 }
-.web_content_HTML .web_HTML{
-    width: 400px;
+.web_content_HTML .web_HTML_nav{
     display : flex;
     flex-direction: column;
-    padding : 5px;
+    width: 350px;
     background-color: #eed8d8;
+    overflow-x: scroll;
+    height: 900px;
+}
+.web_HTML_nav .web_HTML_Tutor,
+.web_HTML_Forms ,
+.web_HTML_Graphics ,
+.web_HTML_Media
+{
+    display : flex;
+    flex-direction: column;
+}
+
+.web_HTML_Tutor h2 ,
+.web_HTML_Forms h2,
+.web_HTML_Graphics h2,
+.web_HTML_Media h2{
+    padding : 20px;
+    font-weight: 500;
+    font-size: 2em;
+}
+
+.web_HTML_Tutor span ,
+.web_HTML_Forms span,
+.web_HTML_Graphics span,
+.web_HTML_Media span
+{
+    padding :3px 20px;
+}
+
+.web_HTML_Tutor span:hover ,
+.web_HTML_Forms span:hover,
+.web_HTML_Graphics span:hover,
+.web_HTML_Media span:hover{
+   background-color: rgb(75, 214, 75);
+   width: 100%;
+   transition: 0.25s;
 }
 .web_content_HTML .content_HTML{
     width: 100%;
-    padding: 20px;
+    padding: 15px;
+    /* overflow-x: scroll; */
 }
 .content_HTML .adds img{
     display : flex;
     width: 100%;
-    height: 300px;
 }
 .content_HTML .content_title{
     font-size: 2.5em;
@@ -107,4 +142,12 @@ body{
 }
 .content_HTML .Example_HTML h2{
     font-weight: 500;
+}
+.nav_search .fa-solid ,
+.nav_global .fa-solid{
+    transition: transform 0.3s ease-in-out;
+}
+.nav_search .fa-solid:hover ,
+.nav_global .fa-solid:hover{
+    transform: scale(1.5);
 }
